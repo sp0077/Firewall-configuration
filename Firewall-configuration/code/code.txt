@@ -1,0 +1,2 @@
+# Block inbound traffic on Telnet (Port 23)
+New-NetFirewallRule -DisplayName "Block Telnet" -Direction Inbound -Protocol TCP -LocalPort 23 -Action Block
